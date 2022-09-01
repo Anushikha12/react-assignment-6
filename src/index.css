@@ -1,13 +1,131 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.main {
+  background-image: linear-gradient(lightblue,lightpink,lightblue);
+  height:95vh;
+  width:99vw;
+}
+.nav {
+  list-style-type: none;
+  display:flex;
+  justify-content: space-around;
+  background-color: rgb(4, 4, 69);
+  color:white;
+  font-size: 25px;
+  font-style: italic;
+  cursor:pointer;
+  height:42px;
+  padding-top: 8px;
+}
+.item {
+  transition: all 1s linear 0s;
+  text-decoration: none;
+  color:white;
+}
+.item:hover {
+  color:lightcoral;
+}
+.home,.contact{
+  font-weight: bolder;
+  font-size:25px;
+  text-align:center;
+}
+.student-details-btn{
+  display: flex;
+  justify-content: space-between;
+  margin-right:10vw;
+  margin-left: 10vw;
+  align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.student-details-btn>button{
+  font-size:22px;
+  border-radius: 30px;
+  height:42px;
+  width:200px;
+  cursor: pointer;
+}
+.details-section{
+  margin-left:30px;
+  margin-right: 30px;
+  height: fit-content;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  position: relative;
+  margin: auto;
+  top: 40px;
+  width: 82%;
+}
+
+.head{
+  display: flex;
+  align-items: center;
+  flex-flow: row;
+  gap:10vw;
+  height:60px;
+  position: relative;
+  top: -40px;
+  font-size: 25px;
+  background-color:antiquewhite;
+  border:1px solid black;
+}
+
+.addSList-form{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+form{
+  padding: 25px;
+  border-radius: 20px;
+display: flex;
+flex-flow: column;
+width: 350px;
+justify-content: center;
+}
+
+form>input{
+  padding: 10px;
+}
+
+.addSList-form>.btn-div>button{
+  position: relative;
+  bottom: 20px;
+  cursor: pointer;
+  color: antiquewhite;
+  background-color: rgb(6, 6, 45);
+  width:130px;
+  height:50px;
+  font-size:20px;
+  border-radius: 15px;
+}
+.StudentCard{
+  display: flex;
+  flex-flow: row;
+  gap: 13vw;
+  align-items: center;
+}
+
+.list{
+  position: relative;
+  top: -30px;
+}
+.StudentCard>button{
+  cursor: pointer;
+  color:blue;
+  width:100px;
+  text-decoration: underline;
+  font-size:25px;
+
+}
+.StudentCard>p{
+  width: 15px;
+  font-size:22px;
+}
+
+.btn-div{
+  display: flex;
+  flex-flow: row;
+ gap: 1vw;
+  margin-left: 8vw;
+  cursor: pointer;
 }
